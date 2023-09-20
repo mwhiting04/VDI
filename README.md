@@ -12,7 +12,7 @@ This project's focus is to create a simple VDI client intended for mass deployme
 
 You **MUST** install virt-viewer prior to using PVE VDI client, you may download it from the [official Virtual Machine Manager](https://virt-manager.org/download) site.
 
-Please visit the [releases](https://github.com/joshpatten/PVE-VDIClient/releases) section to download a prebuilt MSI package
+Please visit the [releases](https://github.com/PercFab/PercFab_PVE-VDIClient/releases) section to download a prebuilt MSI package
 
 If you need to customize the installation, such as to sign the executable and MSI, you may download and install the [WIX toolset](https://wixtoolset.org/releases/) and use the build_vdiclient.bat file to build a new MSI.
 
@@ -25,8 +25,8 @@ you will need to download the latest 3.10 python release, and run the following 
 Run the following commands on a Debian/Ubuntu Linux system to install the appropriate prerequisites
 
     apt install python3-pip python3-tk virt-viewer git
-    git clone https://github.com/joshpatten/PVE-VDIClient.git
-    cd ./PVE-VDIClient/
+    git clone https://github.com/PercFab/PercFab_PVE-VDIClient.git
+    cd ./PercFab_PVE-VDIClient/
     chmod +x requirements.sh
     ./requirements.sh
     cp vdiclient.py /usr/local/bin
@@ -37,12 +37,12 @@ Run the following commands on a Debian/Ubuntu Linux system to install the approp
 PVE VDI Client **REQUIRES** a configuration file to function. The client searches for this file in the following locations unless **--config** is specified on the commmand line:
 
 * Windows
-    * %APPDATA%\VDIClient\vdiclient.ini
-    * %PROGRAMFILES%\VDIClient\vdiclient.ini
+    * %APPDATA%\PercFabVDIClient\vdiclient.ini
+    * %PROGRAMFILES%\PercFabVDIClient\vdiclient.ini
 * Linux
-    * ~/.config/VDIClient/vdiclient.ini
-    * /etc/vdiclient/vdiclient.ini
-    * /usr/local/etc/vdiclient/vdiclient.ini
+    * ~/.config/PercFabVDIClient/vdiclient.ini
+    * /etc/PercFabvdiclient/vdiclient.ini
+    * /usr/local/etc/PercFabvdiclient/vdiclient.ini
 
 Please refer to **vdiclient.ini.example** for all available config file options
 
