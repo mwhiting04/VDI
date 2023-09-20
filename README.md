@@ -1,7 +1,7 @@
 # PVE VDI Client
 
 This project's focus is to create a simple VDI client intended for mass deployment. This VDI client connects directly to Proxmox VE and allows users to connect (via Spice) to any VMs they have permission to access.
-
+If you are looking for the Original Release of PVE VDI Client Please Visit [joshpatten/PVE-VDIClient](https://github.com/joshpatten/PVE-VDIClient)
 ![Login Screen](screenshots/login.png)
 
 ![Login Screen with OTP](screenshots/login-totp.png)
