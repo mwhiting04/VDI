@@ -52,23 +52,23 @@ def loadconfig(config_location = None):
 			config_location = None
 	if not config_location:
 		if os.name == 'nt': # Windows
-			config_location = f'{os.getenv("APPDATA")}\\VDIClient\\vdiclient.ini'
+			config_location = f'{os.getenv("APPDATA")}\\PercFabVDIClient\\vdiclient.ini'
 			if not os.path.exists(config_location):
-				config_location = f'{os.getenv("PROGRAMFILES")}\\VDIClient\\vdiclient.ini'
+				config_location = f'{os.getenv("PROGRAMFILES")}\\PercFabVDIClient\\vdiclient.ini'
 			if not os.path.exists(config_location):
-				config_location = f'{os.getenv("PROGRAMFILES(x86)")}\\VDIClient\\vdiclient.ini'
+				config_location = f'{os.getenv("PROGRAMFILES(x86)")}\\PercFabVDIClient\\vdiclient.ini'
 			if not os.path.exists(config_location):
 				# Last ditch effort
-				config_location = 'C:\\Program Files\\VDIClient\\vdiclient.ini'
+				config_location = 'C:\\Program Files\\PercFabVDIClient\\vdiclient.ini'
 			if not os.path.exists(config_location):
 				win_popup_button(f'Unable to read supplied configuration from any location!', 'OK')
 				return False
 		elif os.name == 'posix': #Linux
-			config_location = os.path.expanduser('~/.config/VDIClient/vdiclient.ini')
+			config_location = os.path.expanduser('~/.config/PercFabVDIClient/vdiclient.ini')
 			if not os.path.exists(config_location):
-				config_location = '/etc/vdiclient/vdiclient.ini'
+				config_location = '/etc/PercFabvdiclient/vdiclient.ini'
 			if not os.path.exists(config_location):
-				config_location = '/usr/local/etc/vdiclient/vdiclient.ini'
+				config_location = '/usr/local/etc/PercFabvdiclient/vdiclient.ini'
 			if not os.path.exists(config_location):
 				win_popup_button(f'Unable to read supplied configuration from any location!', 'OK')
 				return False

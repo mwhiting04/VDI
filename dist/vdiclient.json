@@ -1,13 +1,13 @@
 {
-	"upgrade_guid" : "46cbad92-353e-4b28-9bee-83950991dad8",
+	"upgrade_guid" : "2c6a4b17-8fcf-47d3-9370-2be10acbf021",
 	"version" : "1.2.02",
-	"product_name" : "VDI Client",
-	"manufacturer" : "Josh Patten",
-	"name" : "VDI Client",
+	"product_name" : "PercFab VDI",
+	"manufacturer" : "Robert Whitacre & Josh Patten",
+	"name" : "PercFab VDI Client",
 	"name_base" : "vdiclient",
 	"arch": 64,
 	"comments" : "This is the Proxmox VDI client. This client interfaces with Proxmox requires that virt-viewer be installed.",
-	"installdir" : "VDIClient",
+	"installdir" : "PercFabVDIClient",
 	"installscope" : "perMachine",
 	"license_file" : "License.rtf",
 	"startmenu_shortcut": "vdiclient.exe",
@@ -15,7 +15,7 @@
 	"parts" : [
 		{
 			"id" : "MainProgram",
-			"title" : "VDI Client",
+			"title" : "PercFab VDI Client",
 			"description" : "Proxmox VDI Client",
 			"absent" : "disallow",
 			"staged_dir" : "vdiclient"
