@@ -10,7 +10,7 @@ If you are looking for the Original Release of PVE VDI Client Please Visit [josh
 
 ## Windows Installation
 
-You **MUST** install virt-viewer prior to using PVE VDI client, you may download it from the [official Virtual Machine Manager](https://virt-manager.org/download) site.
+You **MUST** install virt-viewer prior to using PVE VDI client, you may download it from the [official Virtual Machine Manager](https://virt-manager.org/download.html) site.
 
 Please visit the [releases](https://github.com/PercFab/PercFab_PVE-VDIClient/releases) section to download a prebuilt MSI package
 
