@@ -515,7 +515,7 @@ def setvmlayout(vms):
 
 def iniwin(inistring):
 	inilayout = [
-			[sg.Multiline(default_text=inistring, size=(100, 40))]
+			[sg.Multiline(default_text=inistring, size=(800*G.scaling, 600*G.scaling))]
 	]
 	iniwindow = sg.Window('INI debug', inilayout)
 	while True:
